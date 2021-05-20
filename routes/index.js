@@ -6,7 +6,7 @@ const passport = require('passport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('users/index', {
+  res.render('recipes/index', {
     user: req.user,
     name: req.query.name
   });
