@@ -1,4 +1,11 @@
 <%- include('../partials/header') %>
 
 
-
+<tbody>
+<%recipes.forEach(function(r){%>
+<tr>
+<td><%= r.title %></td>
+<td><%=r.ingredients%></td>
+<td><%r.procedure%></td>
+</tr>
+<%})%></tbody>
