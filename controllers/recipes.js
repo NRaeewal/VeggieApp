@@ -19,10 +19,11 @@ function newRecipe (req, res) {
 };
 
 function create (req,res) {
+    console.log(req.body);
     const recipe = new Recipe(req.body);
     recipe.save(function(err){
     if (err) return res.render('recipes/new');
-    console.log(recipe);
+    console.log(err);
     res.redirect('/')
     }
     )}

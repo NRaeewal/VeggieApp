@@ -3,12 +3,16 @@
 
 <form id="new-form" action="/recipes" method="POST">
 
-<label>title:</label>
-<input type="text" name="title">
+<label>name:</label>
+<input type="text" name="name">
+
 <label>ingredients:</label>
 <input type="text" name="ingredients">
+
 <label>procedure:</label>
 <input type="text" name="procedure">
+
 <input type="submit" value='Add Recipe'>
 </form>
 
+<%- include('../partials/footer') %>

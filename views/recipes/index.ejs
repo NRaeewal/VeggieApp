@@ -1,11 +1,22 @@
 <%- include('../partials/header') %>
 
 
-<tbody>
 <%recipes.forEach(function(r){%>
-<tr>
-<td><%= r.title %></td>
-<td><%=r.ingredients%></td>
-<td><%r.procedure%></td>
-</tr>
-<%})%></tbody>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+
+      <h5 class="card-title"><%= r.name %></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%=r.ingredients%></h6>
+      <p class="card-text"><%=r.procedure%></p>
+
+      <a href="#" class="card-link">Details</a>
+    </div>
+  </div>
+<%})%>
+
+
+
+
+
+
+<%- include('../partials/footer') %>
