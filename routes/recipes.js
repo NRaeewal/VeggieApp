@@ -6,7 +6,9 @@ var recipesCtrl= require('../controllers/recipes')
 /* GET users listing. */
 router.get('/', recipesCtrl.index);
 router.get('/new', recipesCtrl.new);
+router.get('/:id', recipesCtrl.show);
 
-router.post('/', recipesCtrl.create)
+router.post('/', recipesCtrl.create);
+
 
 module.exports = router;

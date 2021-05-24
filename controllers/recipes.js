@@ -3,7 +3,8 @@ const Recipe = require('../models/recipe');
 module.exports = {
     index,
     create,
-    new: newRecipe
+    new: newRecipe,
+    show
   };
 
 
@@ -11,7 +12,7 @@ function index (req, res){
     Recipe.find({}, function(err, recipes) {
         res.render('recipes/index', {recipes})
     } 
-    )};
+)};
 
 
 function newRecipe (req, res) {
@@ -19,11 +20,16 @@ function newRecipe (req, res) {
 };
 
 function create (req,res) {
-    console.log(req.body);
     const recipe = new Recipe(req.body);
     recipe.save(function(err){
     if (err) return res.render('recipes/new');
     console.log(err);
     res.redirect('/')
     }
-    )}
+)}
+
+function show (req, res) {
+    Recipe.findById(req.params.id, function(err, recipe){
+        res.render('recipes/show', {recipe});    
+    } 
+)}
