@@ -1,18 +1,22 @@
 <%- include('../partials/header') %>
+  
 
 
-<body>
-    <h1>Edit Recipe</h1>
-    <form action="/recipes/<%= recipe.id %>?_method=PUT" method="POST" autocomplete="off">
+<h1>Edit Recipe</h1>
+
+
+
+    <form action="/recipes/<%= recipes.id %>?_method=PUT" method="POST" autocomplete="off">
         <label>name:</label>
-        <input type="text" name="name" value="<%=recipe.name%>">
+        <input type="text" name="name" value="<%= recipes.name %>">
         
         <label>ingredients:</label>
-        <input type="text" name="ingredients" value="<%=recipe.ingredients%>">
+        <input type="text" name="ingredients" value="<%=recipes.ingredients%>">
         
         <label>procedure:</label>
-        <input type="text" name="procedure" value="<%=recipe.procedure%>">
+        <input type="text" name="procedure" value="<%=recipes.procedure%>">
         
       <button type="submit">Save Recipe</button>
     </form>
-  </body>
+  
+  <%- include('../partials/footer') %>
