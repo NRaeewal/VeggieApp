@@ -3,8 +3,14 @@
 
 <%recipes.forEach(function(r){%>
 <div class="card" style="width: 18rem;">
-    
+
+
+   
   <div class="card-body">
+
+    <form action="/recipes/<%= r.id %>?_method=PUT" method="POST" autocomplete="off">
+    <button type="submit" class="btn btn-warning">Favourite</button>
+    </form>
 
       <h5 class="card-title"><%= r.name %></h5>
       <h6 class="card-subtitle mb-2 text-muted"><%=r.ingredients%></h6>
