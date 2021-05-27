@@ -7,7 +7,8 @@ module.exports = {
     show,
     deleteRecipe,
     edit,
-    update
+    update,
+    favourite
   };
 
 
@@ -66,5 +67,9 @@ function update (req, res) {
      res.render('recipes/index', {recipes})
 })
 };
+
+function favourite (req, res) {
+    res.render('recipes/favourites')
+}
 
 

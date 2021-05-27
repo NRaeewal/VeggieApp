@@ -2,29 +2,25 @@
 
 
 <%recipes.forEach(function(r){%>
+
+
+
+  
 <div class="card" style="width: 18rem;">
-
-
    
   <div class="card-body">
-
-    <form action="/recipes/<%= r.id %>?_method=PUT" method="POST" autocomplete="off">
-    <button type="submit" class="btn btn-warning">Favourite</button>
-    </form>
-
-      <h5 class="card-title"><%= r.name %></h5>
-      <h6 class="card-subtitle mb-2 text-muted"><%=r.ingredients%></h6>
-      <p class="card-text"><%=r.procedure%></p>
-
-      <a href="/recipes/<%=r._id%>" class="card-link">Details</a>
-
-      <form action="/recipes/<%= r._id %>?_method=DELETE"  
-            class="delete-form" method="POST">
-            <button type="submit">X</button>
-          </form>
+    
+    <div style="width:100%; text-align:center">
+    <img class="image" style="width: 100%" src="https://images.unsplash.com/photo-1542986130-d0c46350cf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="Girl in a jacket">
+    </div>
+      <h5 class="card-title"><a href="/recipes/<%=r._id%>" class="card-link"><%= r.name %></a></h5>
+      
+      <form action="/recipes/<%= r.id %>?_method=PUT" method="POST" autocomplete="off">
+      <a class="btn-floating halfway-fab waves-effect waves-light red" type="submit"><i class="material-icons">add</i></a>
+      </form>
 
     
-  </div>    
+    </div>    
   </div>
 <%})%>
 

@@ -18,5 +18,10 @@
         
       <button type="submit">Save Recipe</button>
     </form>
+
+    <form action="/recipes/<%= recipes._id %>?_method=DELETE"  
+      class="delete-form" method="POST">
+      <button type="submit">Delete This Recipe</button>
+    </form>
   
   <%- include('../partials/footer') %>
