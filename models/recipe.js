@@ -15,7 +15,6 @@ const recipeSchema = new Schema({
   ingredients: [String],
   procedure: String,
   comments: [commentSchema],
-  favourite: Boolean
 });
 
 

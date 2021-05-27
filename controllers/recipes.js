@@ -14,7 +14,8 @@ module.exports = {
 
 function index (req, res){
     Recipe.find({}, function(err, recipes) {
-        res.render('recipes/index', {recipes})
+        res.render('recipes/index', {recipes, user: req.user,
+        })
     } 
 )};
 
