@@ -16,12 +16,12 @@
         <label>procedure:</label>
         <input type="text" name="procedure" value="<%=recipes.procedure%>">
         
-      <button type="submit">Save Recipe</button>
-    </form>
+      <button type="submit"  class="btn btn-primary">Save Recipe</button>
+    </form><br><br>
 
     <form action="/recipes/<%= recipes._id %>?_method=DELETE"  
       class="delete-form" method="POST">
-      <button type="submit">Delete This Recipe</button>
+      <button type="submit"  class="btn">Delete This Recipe</button>
     </form>
   
   <%- include('../partials/footer') %>

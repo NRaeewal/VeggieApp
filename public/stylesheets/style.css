@@ -1,5 +1,7 @@
+
+
 body {
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -8,9 +10,35 @@ a {
 }
 
 
-
 .card {
   display: inline-block;
   height: 300px
 }
 
+.nav-wrapper {
+  background-color: #8FBC8F;
+}
+
+.card-title a{
+  color: #333300;
+}
+
+.nav-wrapper a{
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+#show-page {
+  text-align: center;
+  font-size: large;
+}
+
+.delete-form .btn {
+  color:black;
+  background-color: red;
+}
+
+#new-form .col-sm-10 { 
+  color: black;
+
+}

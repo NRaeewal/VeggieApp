@@ -15,7 +15,7 @@
         <!-- JavaScript for Materialize -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-
+       
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,19 +24,23 @@
 
 <body>
     
-  <nav>
-    <a href="/recipes">All Recipes</a>
-    <a href="/recipes/new">Add New Recipe</a>  
-    <a href="/recipes/new">Favourites (coming soon)</a>  
-    
-    
-    
-    </nav>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="/recipes">All Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/recipes/new">Add Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/recipes/new" tabindex="-1" aria-disabled="true">Favourites(coming soon)</a>
+      </li>
+    </ul>
 
 
   <nav>
     <div class="nav-wrapper">
-      <a href="" class="brand-logo left">EAT YO VEGGIES!!</a>
+      <a href="/recipes" class="brand-logo center" >vegan-YUM</a>
       <ul class="right">
         <li>
           <% if (user) { %>

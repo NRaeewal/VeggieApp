@@ -1,18 +1,31 @@
 <%- include('../partials/header') %>
 
+<h1>Add a New Recipe</h1>
+
+
 
 <form id="new-form" action="/recipes" method="POST">
 
-<label>name:</label>
-<input type="text" name="name" required>
+<div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" name="name" pattern="[A-Z].+" required>
+    </div>
 
-<label>ingredients:</label>
-<input type="text" name="ingredients" required>
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Ingredients:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" name="ingredients" pattern="[A-Z].+" required>
+    </div>
 
-<label>procedure:</label>
-<input type="text" name="procedure" required>
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Procedure:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" name="procedure" pattern="[A-Z].+" required>
+    </div>
 
-<input type="submit" value='Add Recipe'>
+  </div>
+
+  <input type="submit" class="btn" value='Add Recipe'>
+
 </form>
 
 <%- include('../partials/footer') %>
