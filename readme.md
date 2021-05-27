@@ -17,8 +17,7 @@ This document will go through the details of my full-stack vegan application
 
 ERD
 
-<img src="https://i.ibb.co/qYddPfd/project2-ERD.jpg">
-
+<a href="https://ibb.co/0yccdSc"><img src="https://i.ibb.co/qYddPfd/project2-ERD.jpg" alt="project2-ERD" border="0"></a>
 <br><br>
 
 ## Screenshots 
@@ -29,7 +28,7 @@ Index View
 
 Add Recipe View
 
-<a href="https://ibb.co/nnbLjB7"><img src="https://i.ibb.co/nnbLjB7/project2form.jpg" alt="project2form" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/8Kzfxxw/project2add.jpg" alt="project2add" border="0"></a>
 
 Read and Edit Recipe 
 
