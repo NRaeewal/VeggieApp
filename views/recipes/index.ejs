@@ -3,7 +3,17 @@
 
 <%recipes.forEach(function(r){%>
 <div class="card" style="width: 18rem;">
-    
+
+  <form action="/recipes/<%= r.id %>?_method=PUT"
+  method="POST">
+
+  <button type="submit" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+  </button>
+
+</form>
+
+
   <div class="card-body">
 
       <h5 class="card-title"><%= r.name %></h5>
