@@ -16,6 +16,6 @@ router.get('/:id/edit', recipesCtrl.edit)
 
 router.put('/:id', recipesCtrl.update)
 
-router.get('/favourites', recipesCtrl.favourite)
+router.post('/:id', recipesCtrl.favourite)
 
 module.exports = router;

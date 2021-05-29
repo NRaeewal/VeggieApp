@@ -56,7 +56,7 @@ Read and Edit Recipe
 
 ## Deployed Application - Heroku 
 
-click link: 
+click link: http://vegan-yum.herokuapp.com/recipes
 
 
 ## Next Steps 
