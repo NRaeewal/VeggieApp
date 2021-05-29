@@ -57,17 +57,11 @@ function edit (req, res) {
 
 function update (req, res) {
     console.log(req.body)
-    Recipe.findByIdAndUpdate(req.params.id, req.body, {new: true}
-    )
-    .then(function(recipe){
-    res.render('recipes/show', {recipe})
+    Recipe.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(err, recipe){
+    res.render('recipes/show', {recipe}) }
+)};
     
-    }) 
-    .catch(function(err)
-    { console.log(err, "oops");
-     res.render('recipes/index', {recipes})
-})
-};
+
 
 function favourite (req, res) {
     res.render('recipes/favourites')
